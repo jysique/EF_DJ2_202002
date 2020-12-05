@@ -1,7 +1,7 @@
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_final_exam/features/listCardScreen.dart';
+import 'package:flutter_final_exam/features/list_card_screen.dart';
 import 'package:qrscan/qrscan.dart' as scanner;
 
 class HomeScreen extends StatefulWidget {
@@ -73,10 +73,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     SizedBox(height: 30),
                     Container(
+                      alignment: Alignment.topLeft,
                       child: Text(
                         "Balance",
                         style: TextStyle(fontSize: 25),
-                        textAlign: TextAlign.start,
                       ),
                     ),
                     SizedBox(
@@ -111,7 +111,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                           Text('RESULT  $barcode'),
 
-                          RaisedButton(onPressed: _scan, child: Text("Scan")),
+                          RaisedButton(onPressed: _scan, child: Text("Leer QR")),
                         ],
                       ),
                     ),

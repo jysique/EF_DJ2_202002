@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:awesome_card/awesome_card.dart';
+import 'package:flutter/material.dart';
+
 class NewCardScreen extends StatefulWidget {
   @override
   _NewCardScreenState createState() => _NewCardScreenState();
@@ -9,7 +10,7 @@ class _NewCardScreenState extends State<NewCardScreen> {
   static Widget mainColor = new Container(
     width: double.maxFinite,
     height: double.maxFinite,
-    color: Colors.blue,
+    color: Colors.lightBlue,
   );
 
   String cardNumber = "";
